@@ -1,0 +1,509 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cache Bank Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/css/leaflet.css">
+    <link rel="stylesheet" href="./assets/css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
+</head>
+
+<body class="bg-gray-100">
+    <div class="mx-auto bg-white">
+        <div class="relative flex flex-wrap items-center justify-between w-full shrink-0">
+            <!-- Main container with navigation and header content -->
+            <div class="px-4">
+                <img class="h-8" src="assets/component-1/navigation/cache-bank-logo.png">
+            </div>
+            <div class="hidden md:flex items-center justify-between gap-12 text-black"> 
+                <a href="#product" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Product</a>
+                <a href="#features" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Features</a>
+                <a href="#getting-started" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Get Started</a>
+                <a href="#contact" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Contact</a>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="https://careers.who.int/careersection/iam/accessmanagement/login.jsf?redirectionURI=https%3A%2F%2Fcareers.who.int%2Fcareersection%2Fex%2Fmysubmissions.ftl&TARGET=https%3A%2F%2Fcareers.who.int%2Fcareersection%2Fex%2Fmysubmissions.ftl">
+                    <button class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Log In</button>
+
+                </a>
+                
+               <a href="https://accounts.google.com/lifecycle/steps/signup/name?dsh=S-1492207001:1709296425812623&flowEntry=SignUp&flowName=GlifWebSignIn&theme=glif&TL=ADg0xR2_vR7MBjDcfUbkozm_cF-pj-Z05uqk2wxGOMBDKJ-QUt2xJZPDPJHpN6is">
+                <button class="px-4 py-2 text-sm font-bold text-blue bg-green-500 rounded-xl hover:bg-pink-500">Sign Up</button>
+
+               </a>
+             
+            </div>
+            <button class="md:hidden p-4" id="mobile-menu-toggle">
+              <!-- Hamburger menu icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              class="w-6 h-6 text-dark-grey-700" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+          </svg>
+            </button>
+            <div class="absolute flex md:hidden flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-white max-h-screen top-full px-4 py-4"
+            id="mobile-menu"
+            > 
+                <a href="javascript:void(0)"
+                 class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Product</a>
+                <a href="javascript:void(0)"
+                 class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Features</a>
+                <a href="javascript:void(0)"
+                 class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Get Started</a>
+                <a href="javascript:void(0)"
+                 class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 ">Contact</a>
+                <button class="flex items-center px-4 py-2 text-sm font-normal text-black">Log In</button>
+                <button class="flex items-center px-4 py-2 text-sm font-bold text-white bg-green-500 rounded-xl hover:bg-pink-500">Sign Up</button>
+            </div>
+        </div>
+        <div class="w-full">
+            <!-- Wide full-width container for additional content -->
+        </div>
+        <div class="container mx-auto">
+            <!-- Centered container for more content -->
+        </div>
+        <div class="w-full">
+            <!-- Wide full-width container for additional content -->
+        </div>
+        <div class="w-full">
+            <!-- Wide full-width container for additional content -->
+        </div>
+    </div>
+    <div class="w-full bg-green-500">
+        <!-- Full-width footer container with green background -->
+    </div>
+    <script>
+        document.getElementById('mobile-menu-toggle')
+        .addEventListener("click", function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    <!-- Component 2: Hero and Endorsement -->
+    <!-- HERO -->
+    <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5 " id="product" >
+        <div class="flex flex-col justify-center col-span-1 text-center lg:text-start mx-4">
+            <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
+                The Clever Place to Keep Your Cache
+            </h1>
+            <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
+                Cache Bank is designed exclusively for software developers. We understand your financial needs are as unique as the code you write. Our services offer cutting-edge financial solutions that help you take care of 
+                your cash.
+            </p>
+            <div class="flex flex-col items-center gap-4 lg:flex-row">
+                <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
+                    Join Cache Now
+                </button>
+                <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
+                    Join Our Discord Server
+                </button>
+            </div>
+        </div>
+        <div class="items-center justify-end hidden col-span-1 md:flex">
+            <img class="w-4/5 rounded-md" src="assets/component-2/hero-image.png" alt="header image">
+            
+        </div>
+    </section>
+    <!-- ENDORSEMENT -->
+    <section class="w-full">
+        <div class="container flex flex-col items-center gap-8 mx-auto my-40">
+            <p class="text-center text-dark-grey-600 font-semibold mb-10 text-2xl">
+                Endorsed by global companies like
+            </p>
+            <div class="flex flex-wrap items-center justify-center w-full gap-6 lg:gap-0 lg:flex-nowrap lg:justify-between">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="155" height="65" viewBox="0 0 184 65" fill="none">
+                        <path d="M20.2765 64.8827C14.7995 64.6671 10.3185 63.1822 6.81467 60.4243C6.14599 59.8975 4.55259 58.3178 4.01802 57.6515C2.59718 55.8814 1.6312 54.1586 0.986896 52.2472C-0.995712 46.3634 0.0246651 38.6425 3.90547 30.1689C7.22826 22.9145 12.3555 15.7196 21.3007 5.75465C22.6183 4.28833 26.5423 0 26.5676 0C26.577 0 26.3631 0.367039 26.094 0.813998C23.7681 4.67396 21.778 9.22062 20.6939 13.1568C18.9523 19.4727 19.1624 24.8928 21.3091 29.0957C22.79 31.9911 25.3287 34.4991 28.1835 35.8855C33.1813 38.3117 40.4984 38.5124 49.4342 36.4728C50.0494 36.3315 80.535 28.3133 117.18 18.6541C153.826 8.99389 183.814 1.09648 183.818 1.10298C183.828 1.11136 98.6805 37.2115 54.4788 55.9399C47.4788 58.905 45.6068 59.654 42.3159 60.7988C33.9034 63.7258 26.3678 65.1224 20.2765 64.8827Z" fill="#1B2559"/>
+                    </svg>
+                </span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64" style="fill: #1b2559">
+                        <path d="M 32.376953 7 C 25.650953 7 18.181375 9.5161875 16.609375 17.742188 C 16.441375 18.618188 17.052859 19.067312 17.630859 19.195312 L 24.460938 19.892578 C 25.102937 19.858578 25.614281 19.260906 25.738281 18.628906 C 26.326281 15.794906 28.727922 14.394531 31.419922 14.394531 C 32.873922 14.394531 34.516953 14.940516 35.376953 16.228516 C 36.370953 17.666516 36.207031 19.617203 36.207031 21.283203 L 36.207031 22.232422 C 32.109031 22.688422 26.763641 22.966766 22.931641 24.634766 C 18.503641 26.528766 15.398437 30.392266 15.398438 36.072266 C 15.398438 43.340266 20.044141 47.003906 25.994141 47.003906 C 31.020141 47.003906 33.733281 45.798719 37.613281 41.886719 C 38.895281 43.724719 39.351219 44.630453 41.699219 46.564453 C 42.227219 46.844453 42.891422 46.789047 43.357422 46.373047 L 43.357422 46.4375 C 44.767422 45.1935 47.34125 42.961766 48.78125 41.759766 C 49.35525 41.291766 49.23125 40.561828 48.78125 39.923828 C 47.48925 38.157828 46.164062 36.694062 46.164062 33.414062 L 46.164062 22.544922 C 46.164062 17.926922 46.475109 13.654609 43.037109 10.474609 C 40.323109 7.8986094 35.812953 7 32.376953 7 z M 35.248047 27.835938 C 35.566797 27.841188 35.885078 27.851562 36.205078 27.851562 L 36.205078 29.367188 C 36.207078 32.095187 36.317687 34.337719 34.929688 36.761719 C 33.805687 38.729719 31.997672 39.919922 30.013672 39.919922 C 27.301672 39.919922 25.734375 37.891281 25.734375 34.863281 C 25.734375 29.653281 29.831016 28.141562 34.291016 27.851562 C 34.610016 27.830562 34.929297 27.830687 35.248047 27.835938 z M 54.171875 45.441406 C 52.353875 45.467406 50.22375 45.850422 48.59375 46.982422 C 48.09375 47.330422 48.166656 47.817953 48.722656 47.751953 C 50.556656 47.533953 54.609844 47.021359 55.339844 47.943359 C 56.067844 48.867359 54.533609 52.665281 53.849609 54.363281 C 53.641609 54.875281 54.092547 55.073594 54.560547 54.683594 C 57.612547 52.155594 58.428687 46.912531 57.804688 46.144531 C 57.494687 45.770531 55.991875 45.415406 54.171875 45.441406 z M 6.3671875 46.404297 C 5.9871875 46.454297 5.8363281 46.946688 6.2363281 47.304688 C 13.020328 53.368688 21.967828 57 31.923828 57 C 39.025828 57 47.315859 54.800578 53.005859 50.642578 C 53.945859 49.952578 53.124109 48.888922 52.162109 49.294922 C 45.784109 51.974922 38.815766 53.273437 32.509766 53.273438 C 23.159766 53.273438 14.140266 50.74725 6.8222656 46.53125 C 6.6602656 46.43925 6.4911875 46.388297 6.3671875 46.404297 z"/>
+                    </svg>
+                </span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64" style="fill: #1b2559">
+                        <path d="M53.5,10h-13l-2,5.5h-3L34,19l-6.5-9H14L3,45l12,11h13l2-8l1,1.5h4l5.5,6.5h13L60,23L53.5,10z M39,19h1h1.5h2l-1.14,3.04	l-4.569,0.286L39,19z M16.979,14h6.87l-0.635,2.223l-7.198,0.576L16.979,14z M17.5,43H7l3.518-10.224L13,32.5L10,41h8.192L17.5,43z M19.045,38.538L13.5,39l1-3h5.423L19.045,38.538z M43.97,43H33l3.874-13H33.47L31,36.5h-8l2.28-6.5H22l-1.217,3.517l-5.598,0.431	L16.5,30h-5.027l3.785-11h7.162l-0.571,2H25l-1,3.5h10h3h11.455L43.97,43z M49.154,21.615l-3.827,0.239L47,16h-4.354l0.764-2H51	L49.154,21.615z"/>
+                    </svg>
+                </span>
+                <span>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="100"
+                        height="100"
+                        viewBox="0 0 64 64"
+                        style="fill: #1b2559"
+                        >
+                            <path
+                            d="M 32 6 C 17.641 6 6 17.641 6 32 C 6 32.237 6.0115781 32.471031 6.0175781 32.707031 L 18.65625 37.140625 C 20.11925 35.234625 22.412 34 25 34 C 25.182 34 25.360063 34.015344 25.539062 34.027344 L 29.060547 27.689453 C 29.020547 27.298453 29 26.902 29 26.5 C 29 20.149 34.149 15 40.5 15 C 46.851 15 52 20.149 52 26.5 C 52 32.851 46.851 38 40.5 38 C 39.871 38 39.259203 37.936844 38.658203 37.839844 L 32.970703 41.394531 C 32.984703 41.595531 33 41.795 33 42 C 33 46.418 29.418 50 25 50 C 20.582 50 17 46.418 17 42 C 17 41.742 17.015062 41.488328 17.039062 41.236328 L 6.3261719 36.113281 C 8.2981719 48.517281 19.041 58 32 58 C 46.359 58 58 46.359 58 32 C 58 17.641 46.359 6 32 6 z M 40.5 19 C 36.358 19 33 22.358 33 26.5 C 33 30.642 36.358 34 40.5 34 C 44.642 34 48 30.642 48 26.5 C 48 22.358 44.642 19 40.5 19 z M 40.5 23 C 42.433 23 44 24.567 44 26.5 C 44 28.433 42.433 30 40.5 30 C 38.567 30 37 28.433 37 26.5 C 37 24.567 38.567 23 40.5 23 z M 25 37 C 23.754 37 22.629906 37.472563 21.753906 38.226562 L 25.189453 39.431641 C 26.266453 39.769641 27 40.767484 27 41.896484 C 27 43.798484 25.014828 45.051469 23.298828 44.230469 L 20.070312 42.685547 C 20.406312 45.119547 22.473 47 25 47 C 27.761 47 30 44.761 30 42 C 30 39.239 27.761 37 25 37 z"
+                            ></path>
+                    </svg>
+                </span>
+                <span>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="100"
+                        height="100"
+                        viewBox="0 0 64 64"
+                        style="fill: #1b2559"
+                        >
+                            <path
+                            d="M 42.019531 4 C 41.350297 3.998125 40.569828 4.0454531 39.611328 4.1269531 L 8.3945312 6.4140625 C 5.8765313 6.6300625 5 8.2646562 5 10.222656 L 5 44.193359 C 5 45.718359 5.5463281 47.022625 6.8613281 48.765625 L 14.199219 58.238281 C 15.404219 59.762281 16.500734 60.089469 18.802734 59.980469 L 55.056641 57.800781 C 58.122641 57.585781 59 56.169391 59 53.775391 L 59 15.558594 C 59 14.251594 58.450641 13.926516 56.806641 12.728516 L 46.841797 5.7597656 C 45.035047 4.4547656 44.027234 4.005625 42.019531 4 z M 41.373047 6.9882812 C 43.348223 7.0202598 44.474406 7.7785 45.347656 8.453125 L 50.556641 12.201172 C 50.777641 12.311172 51.332016 12.970703 50.666016 12.970703 L 19.298828 14.845703 C 15.971828 15.067703 15.306156 15.176141 13.535156 13.744141 L 9.2128906 10.326172 C 8.7708906 9.8841719 8.9926094 9.3336094 10.099609 9.2246094 L 40.472656 7.0214844 C 40.791156 6.9939844 41.090879 6.9837129 41.373047 6.9882812 z M 53.671875 17.009766 C 54.582299 17.101627 55 17.84175 55 19.078125 L 55 51.304688 C 55 52.720687 54.7795 53.920344 52.8125 54.027344 L 18.839844 55.988281 C 16.872844 56.095281 16 55.442219 16 53.699219 L 16 21.257812 C 16 19.842813 16.437047 19.186125 17.748047 19.078125 L 53.251953 17.011719 C 53.402328 16.997969 53.541814 16.996643 53.671875 17.009766 z M 50 22.5 L 43 23 C 41.359 23.196 40.5 24 40.5 25 L 43.5 25.5 L 43.5 40.5 L 32 23.5 L 24.201172 24.1875 C 22.662172 24.3795 22.12375 25.7085 22.34375 26.6875 L 25 27 L 25 48 L 24 48.5 C 22 49 22.5 50 22.5 50.5 L 30.5 50 C 33 49.5 33 48 33 48 L 29 47 L 29 31 L 39.935547 47.970703 C 41.244547 49.599703 41.751 50.5 43.5 50.5 C 45 50.5 46.5 50 47.5 49 L 47.5 25 L 48.892578 24.732422 C 49.999578 24.500422 50.5 23.5 50 22.5 z"
+                            ></path>
+                    </svg>
+                </span>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Components 3: Features -->
+    <!-- FEATURES -->
+    <div class=" container mx-auto py-10 flex flex-col items-center justify-center" id="features">
+        <!-- HEADER SECTION -->
+        <div class=" flex flex-col items-center justify-center mt-12">
+            <h1 class="mb-4 text-3xl lg:text-4xl font-extrabold text-dark-grey-900 text-center">Elevate Your Online Banking</h1>
+            <p class="text-lg text-center lg:w-7/12 text-grey-700">
+                We merge cutting edge banking with deep understanding of software
+                developer needs.Experience tailored financial solutions, advanced security,
+                and tech-focused support designed just for you.
+            </p>
+        </div>
+        <!-- END OF HEADER SECTION -->
+        <!-- CARD SECTION -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 flex flex-wrap ">
+            <!-- Card 1 -->
+            <div class=" flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
+                <div class="flex items-center justify-center w-14 h-12 rounded-2xl bg-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M22.8233 8C22.8233 7.28 22.4533 6.65 21.8833 6.3L12.8333 1L3.78331 6.3C3.21331 6.65 2.83331 7.28 2.83331 8V18C2.83331 19.1 3.73331 20 4.83331 20H20.8333C21.9333 20 22.8333 19.1 22.8333 18L22.8233 8ZM20.8233 8V8.01L12.8333 13L4.83331 8L12.8333 3.32L20.8233 8ZM4.83331 18V10.34L12.8333 15.36L20.8233 10.37L20.8333 18H4.83331Z" fill="white"/>
+                      </svg> 
+                </div>
+                <div class="flex flex-col gap-2 text-center px-7">
+                    <h4 class="text-2xl font-extrabold text-dark-grey-900">Developer-Focused Account Plans</h4>
+                    <p class="font-medium text-dark-grey-700">Tailored accounts offering benefits like high-yield savings and exclusive investment options, designed specifically for
+                        software developers* financial needs and career growth.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class=" flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
+                <div class="flex items-center justify-center w-14 h-12 rounded-2xl bg-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M3.28996 14.78L3.19996 14.69C2.80996 14.3 2.80996 13.67 3.19996 13.28L9.28996 7.18C9.67996 6.79 10.31 6.79 10.7 7.18L13.99 10.47L20.38 3.29C20.76 2.86 21.43 2.85 21.83 3.25C22.2 3.63 22.22 4.23 21.87 4.62L14.7 12.69C14.32 13.12 13.66 13.14 13.25 12.73L9.99996 9.48L4.69996 14.78C4.31996 15.17 3.67996 15.17 3.28996 14.78ZM4.69996 20.78L9.99996 15.48L13.25 18.73C13.66 19.14 14.32 19.12 14.7 18.69L21.87 10.62C22.22 10.23 22.2 9.63 21.83 9.25C21.43 8.85 20.76 8.86 20.38 9.29L13.99 16.47L10.7 13.18C10.31 12.79 9.67996 12.79 9.28996 13.18L3.19996 19.28C2.80996 19.67 2.80996 20.3 3.19996 20.69L3.28996 20.78C3.67996 21.17 4.31996 21.17 4.69996 20.78Z" fill="white"/>
+                      </svg>
+                </div>
+                <div class="flex flex-col gap-2 text-center px-7">
+                    <h4 class="text-2xl font-extrabold text-dark-grey-900">Advanced Online Banking Platform</h4>
+                    <p class="font-medium text-dark-grey-700">A cutting-edge, intuitive online banking interface with features like API integrations, allowing developers to seamlessly
+                        manage finances alongside their coding projects.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class=" flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
+                <div class="flex items-center justify-center w-14 h-12 rounded-2xl bg-green-500">
+                    <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <path
+                    d="M15.8766 12.71C16.857 11.9387 17.5726 10.8809 17.9239 9.68394C18.2751 8.48697 18.2445 7.21027 17.8364 6.03147C17.4283 4.85267 16.6629 3.83039 15.6467 3.10686C14.6305 2.38332 13.4141 1.99451 12.1666 1.99451C10.9192 1.99451 9.70274 2.38332 8.68655 3.10686C7.67037 3.83039 6.90497 4.85267 6.49684 6.03147C6.0887 7.21027 6.05814 8.48697 6.40938 9.68394C6.76063 10.8809 7.47623 11.9387 8.45662 12.71C6.7767 13.383 5.31091 14.4994 4.21552 15.9399C3.12012 17.3805 2.43619 19.0913 2.23662 20.89C2.22218 21.0213 2.23374 21.1542 2.27065 21.2811C2.30756 21.4079 2.36909 21.5263 2.45173 21.6293C2.61864 21.8375 2.86141 21.9708 3.12662 22C3.39184 22.0292 3.65778 21.9518 3.86595 21.7849C4.07411 21.618 4.20745 21.3752 4.23662 21.11C4.45621 19.1552 5.38831 17.3498 6.85484 16.0388C8.32137 14.7278 10.2195 14.003 12.1866 14.003C14.1537 14.003 16.0519 14.7278 17.5184 16.0388C18.9849 17.3498 19.917 19.1552 20.1366 21.11C20.1638 21.3557 20.2811 21.5827 20.4657 21.747C20.6504 21.9114 20.8894 22.0015 21.1366 22H21.2466C21.5088 21.9698 21.7483 21.8373 21.9132 21.6313C22.078 21.4252 22.1547 21.1624 22.1266 20.9C21.9261 19.0962 21.2385 17.381 20.1375 15.9382C19.0364 14.4954 17.5635 13.3795 15.8766 12.71ZM12.1666 12C11.3755 12 10.6021 11.7654 9.94434 11.3259C9.28655 10.8864 8.77385 10.2616 8.4711 9.53074C8.16835 8.79983 8.08914 7.99557 8.24348 7.21964C8.39782 6.44372 8.77879 5.73099 9.3382 5.17158C9.89761 4.61217 10.6103 4.2312 11.3863 4.07686C12.1622 3.92252 12.9665 4.00173 13.6974 4.30448C14.4283 4.60724 15.053 5.11993 15.4925 5.77772C15.932 6.43552 16.1666 7.20888 16.1666 8C16.1666 9.06087 15.7452 10.0783 14.9951 10.8284C14.2449 11.5786 13.2275 12 12.1666 12Z"
+                    fill="white"
+                  ></path>
+                </svg>
+                </div>
+                <div class="flex flex-col gap-2 text-center px-7">
+                    <h4 class="text-2xl font-extrabold text-dark-grey-900">Tech-Savvy Customer Support</h4>
+                    <p class="font-medium text-dark-grey-700">Expert support team with a deep understanding of the tech industry, providing relevant financial advice and assistance
+                        specifically for software developers.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class=" flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-pink-500 transition duration-300">
+                <div class="flex items-center justify-center w-14 h-12 rounded-2xl bg-pink-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M7.83331 4C7.83331 2.89 6.94331 2 5.83331 2C4.72331 2 3.83331 2.89 3.83331 4C3.83331 5.11 4.72331 6 5.83331 6C6.94331 6 7.83331 5.11 7.83331 4ZM11.0233 4.5C10.6133 4.5 10.2633 4.75 10.1033 5.13C9.66331 6.23 8.59331 7 7.33331 7H4.33331C3.50331 7 2.83331 7.67 2.83331 8.5V11H8.83331V8.74C10.2633 8.29 11.4133 7.21 11.9533 5.83C12.2133 5.19 11.7133 4.5 11.0233 4.5ZM19.8333 17C20.9433 17 21.8333 16.11 21.8333 15C21.8333 13.89 20.9433 13 19.8333 13C18.7233 13 17.8333 13.89 17.8333 15C17.8333 16.11 18.7233 17 19.8333 17ZM21.3333 18H18.3333C17.0733 18 16.0033 17.23 15.5633 16.13C15.4133 15.75 15.0533 15.5 14.6433 15.5C13.9533 15.5 13.4533 16.19 13.7033 16.83C14.2533 18.21 15.3933 19.29 16.8233 19.74V22H22.8233V19.5C22.8333 18.67 22.1633 18 21.3333 18ZM18.0833 11.09C18.0833 11.09 18.0833 11.08 18.0933 11.09C17.0333 11.36 16.1933 12.2 15.9233 13.26V13.25C15.8133 13.68 15.4133 14 14.9433 14C14.3933 14 13.9433 13.55 13.9433 13C13.9433 12.95 13.9633 12.86 13.9633 12.86C14.3933 11.01 15.8533 9.55 17.7133 9.13C17.7533 9.13 17.7933 9.12 17.8333 9.12C18.3833 9.12 18.8333 9.57 18.8333 10.12C18.8333 10.58 18.5133 10.98 18.0833 11.09ZM18.8333 6.06C18.8333 6.57 18.4633 6.98 17.9733 7.05C14.7833 7.44 12.2733 9.96 11.8833 13.15C11.8133 13.63 11.3933 14 10.8933 14C10.3433 14 9.89331 13.55 9.89331 13C9.89331 12.98 9.89331 12.96 9.89331 12.94C9.89331 12.93 9.89331 12.92 9.89331 12.91C10.3933 8.79 13.6833 5.53 17.8133 5.06H17.8233C18.3833 5.06 18.8333 5.51 18.8333 6.06Z" fill="white"/>
+                      </svg>
+                      
+                </div>
+                <div class="flex flex-col gap-2 text-center px-7">
+                    <h4 class="text-2xl font-extrabold text-dark-grey-900">>High-Level Security Features</h4>
+                    <p class="font-medium text-dark-grey-700">State-of-the-art cybersecurity measures, including multi-factor authentication and encryption, ensuring the safety of digital
+                        assets, which is crucial for tech professionals</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class=" flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-pink-500 transition duration-300">
+                <div class="flex items-center justify-center w-14 h-12 rounded-2xl bg-pink-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M10.5 13H3.49998C3.23477 13 2.98041 13.1054 2.79288 13.2929C2.60534 13.4804 2.49998 13.7348 2.49998 14V21C2.49998 21.2652 2.60534 21.5196 2.79288 21.7071C2.98041 21.8946 3.23477 22 3.49998 22H10.5C10.7652 22 11.0196 21.8946 11.2071 21.7071C11.3946 21.5196 11.5 21.2652 11.5 21V14C11.5 13.7348 11.3946 13.4804 11.2071 13.2929C11.0196 13.1054 10.7652 13 10.5 13ZM9.49998 20H4.49998V15H9.49998V20ZM21.5 2H14.5C14.2348 2 13.9804 2.10536 13.7929 2.29289C13.6053 2.48043 13.5 2.73478 13.5 3V10C13.5 10.2652 13.6053 10.5196 13.7929 10.7071C13.9804 10.8946 14.2348 11 14.5 11H21.5C21.7652 11 22.0196 10.8946 22.2071 10.7071C22.3946 10.5196 22.5 10.2652 22.5 10V3C22.5 2.73478 22.3946 2.48043 22.2071 2.29289C22.0196 2.10536 21.7652 2 21.5 2ZM20.5 9H15.5V4H20.5V9ZM21.5 13H14.5C14.2348 13 13.9804 13.1054 13.7929 13.2929C13.6053 13.4804 13.5 13.7348 13.5 14V21C13.5 21.2652 13.6053 21.5196 13.7929 21.7071C13.9804 21.8946 14.2348 22 14.5 22H21.5C21.7652 22 22.0196 21.8946 22.2071 21.7071C22.3946 21.5196 22.5 21.2652 22.5 21V14C22.5 13.7348 22.3946 13.4804 22.2071 13.2929C22.0196 13.1054 21.7652 13 21.5 13ZM20.5 20H15.5V15H20.5V20ZM10.5 2H3.49998C3.23477 2 2.98041 2.10536 2.79288 2.29289C2.60534 2.48043 2.49998 2.73478 2.49998 3V10C2.49998 10.2652 2.60534 10.5196 2.79288 10.7071C2.98041 10.8946 3.23477 11 3.49998 11H10.5C10.7652 11 11.0196 10.8946 11.2071 10.7071C11.3946 10.5196 11.5 10.2652 11.5 10V3C11.5 2.73478 11.3946 2.48043 11.2071 2.29289C11.0196 2.10536 10.7652 2 10.5 2ZM9.49998 9H4.49998V4H9.49998V9Z" fill="white"/>
+                      </svg>
+                      
+                </div>
+                <div class="flex flex-col gap-2 text-center px-7">
+                    <h4 class="text-2xl font-extrabold text-dark-grey-900">Innovative Financial Tools</h4>
+                    <p class="font-medium text-dark-grey-700">Access to unique financial tools and resources, like project funding accounts and tech startup investment opportunities,
+                        catering to the entrepreneurial spirit of developers.</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class=" flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-pink-500 transition duration-300">
+                <div class="flex items-center justify-center w-14 h-12 rounded-2xl bg-pink-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M10.1666 14C9.90141 14 9.64706 14.1054 9.45952 14.2929C9.27198 14.4804 9.16663 14.7348 9.16663 15V21C9.16663 21.2652 9.27198 21.5196 9.45952 21.7071C9.64706 21.8946 9.90141 22 10.1666 22C10.4318 22 10.6862 21.8946 10.8737 21.7071C11.0613 21.5196 11.1666 21.2652 11.1666 21V15C11.1666 14.7348 11.0613 14.4804 10.8737 14.2929C10.6862 14.1054 10.4318 14 10.1666 14ZM5.16663 18C4.90141 18 4.64706 18.1054 4.45952 18.2929C4.27198 18.4804 4.16663 18.7348 4.16663 19V21C4.16663 21.2652 4.27198 21.5196 4.45952 21.7071C4.64706 21.8946 4.90141 22 5.16663 22C5.43184 22 5.6862 21.8946 5.87373 21.7071C6.06127 21.5196 6.16663 21.2652 6.16663 21V19C6.16663 18.7348 6.06127 18.4804 5.87373 18.2929C5.6862 18.1054 5.43184 18 5.16663 18ZM20.1666 2C19.9014 2 19.6471 2.10536 19.4595 2.29289C19.272 2.48043 19.1666 2.73478 19.1666 3V21C19.1666 21.2652 19.272 21.5196 19.4595 21.7071C19.6471 21.8946 19.9014 22 20.1666 22C20.4318 22 20.6862 21.8946 20.8737 21.7071C21.0613 21.5196 21.1666 21.2652 21.1666 21V3C21.1666 2.73478 21.0613 2.48043 20.8737 2.29289C20.6862 2.10536 20.4318 2 20.1666 2ZM15.1666 9C14.9014 9 14.6471 9.10536 14.4595 9.29289C14.272 9.48043 14.1666 9.73478 14.1666 10V21C14.1666 21.2652 14.272 21.5196 14.4595 21.7071C14.6471 21.8946 14.9014 22 15.1666 22C15.4318 22 15.6862 21.8946 15.8737 21.7071C16.0613 21.5196 16.1666 21.2652 16.1666 21V10C16.1666 9.73478 16.0613 9.48043 15.8737 9.29289C15.6862 9.10536 15.4318 9 15.1666 9Z" fill="white"/>
+                      </svg>
+                      
+                </div>
+                <div class="flex flex-col gap-2 text-center px-7">
+                    <h4 class="text-2xl font-extrabold text-dark-grey-900">Community and Networking Opportunities</h4>
+                    <p class="font-medium text-dark-grey-700">Exclusive access to tech events, webinars, and a community platform for networking, collaboration, and sharing insights within
+                        the software development industry.</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- END OF CARD SECTION -->
+    </div>
+
+
+
+    
+
+
+
+
+<!-- component-4: stats and getting started section -->
+<!-- stats -->
+<div class="w-full" >
+
+    <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+        <div class="grid W-full grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-y-8 ">
+            <!-- Statistic Blocks -->
+            <!-- STAT-1 -->
+            <div class="flex flex-col items-center">
+                <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900"><span id="countto1" countto="250">250</span>+</h3>
+                <p class="text-base font-normal leading-7 text-center text-dark-grey-600">Hours Saved Sitting in the Bank</p>
+            </div>
+            <!-- STAT-2 -->
+            <div class="flex flex-col items-center">
+                <h3 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900"><span id="countto2" countto="12">12</span>m</h3>
+                <p class="text-base font-normal leading-7 text-center text-dark-grey-600">Cache Saved</p>
+            </div>
+            <!-- STAT-3 -->
+            <div class="flex flex-col items-center">
+                <h1 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900"><span id="countto3" countto="2600" data-decimal="1">2.8</span>k+</h1>
+                <p class="text-base font-normal leading-7 text-center text-dark-grey-600">Global Partners</p>
+            </div>
+            <!-- STAT-4 -->
+            <div class="flex flex-col items-center">
+                <h1 class="text-5xl font-extrabold leading-tight text-center text-dark-grey-900"><span id="countto4" countto="18000">18,000</span>+</h1>
+                <p class="text-base font-normal leading-7 text-center text-dark-grey-900">Happy Developers</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- GETTING STARTED -->
+<div class="w-full" id="getting-started">
+    <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+        <div class="grid w-full grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-32">
+            <div class="bg-cover bg-center  lg:block rounded-3xl" style="background-image:url(&quot;https://i.ibb.co/b1kwzHk/2.png&quot;);">
+            </div>
+            <div class="flex flex-col gap-8">
+                <div class="flex flex-col ga-2 text-center md:text-start">
+                    <h2 class="text-3xl font-extrabold md:text-4xl lg:text-5xl text-dark-grey-900 py-4">How Cache Works?</h2>
+                    <p class="text-base font-medium leading-7 text-dark-grey-600"><span style=" color: rgb(55,65,81); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                    </span>Cache Bank simplifies sign with a user-freindly website,streamlined account options , and an efficient verrification process making banking accesble and hassale-free for developers</p>
+            
+                </div>
+                <div class="grid w-full grid-cols-2 md:grid-cold-2 gap-y-16 gap-x-10">
+                    <!-- STEP-1 -->
+                    <div class="flex flex-col items-start gap-1">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-green-500">
+                            <span class="text-base font-bold leading-7 text-white">1</span>
+
+                        </div>
+                        <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color:rgb(217, 217,227); border-image: initial; --tw-border-spacing-x:0; --tw-border-spacing-y:0; --tw-translate-y:0; --tw-translate-x:0; --tw-scale-x:1; --tw-scale-y:1; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-scale-x:1; --tw-scale-y:1; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-pan-y: ;--tw-pan-x: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; "></span>Visit Cache Bank Website</h3>
+                        <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Go to Cache Bank, click "Sign up" or "Open an Account"</span></p>
+                   </div>
+                   <!-- STEP-2 -->
+                   <div class="flex flex-col items-start gap-1">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-pink-500">
+                            <span class="text-base font-bold leading-7 text-white">2</span>
+
+                        </div>
+                        <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color:rgb(217, 217,227); border-image: initial; --tw-border-spacing-x:0; --tw-border-spacing-y:0; --tw-translate-y:0; --tw-translate-x:0; --tw-scale-x:1; --tw-scale-y:1; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-scale-x:1; --tw-scale-y:1; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-pan-y: ;--tw-pan-x: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; "></span>Choose Account Type</h3>
+                        <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Select from checking, savings, or developer-specific accounts.</span></p>
+                   </div>
+                   <!-- STEP-3 -->
+                   <div class="flex flex-col items-start gap-1">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-pink-500">
+                            <span class="text-base font-bold leading-7 text-white">3</span>
+
+                        </div>
+                        <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color:rgb(217, 217,227); border-image: initial; --tw-border-spacing-x:0; --tw-border-spacing-y:0; --tw-translate-y:0; --tw-translate-x:0; --tw-scale-x:1; --tw-scale-y:1; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-scale-x:1; --tw-scale-y:1; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-pan-y: ;--tw-pan-x: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; "></span>Provide Personal Information</h3>
+                        <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Complete the form with your details and identification for security</span></p>
+                   </div>
+                   <!-- STEP-4 -->
+                   <div class="flex flex-col items-start gap-1">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-green-500">
+                            <span class="text-base font-bold leading-7 text-white">4</span>
+
+                        </div>
+                        <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color:rgb(217, 217,227); border-image: initial; --tw-border-spacing-x:0; --tw-border-spacing-y:0; --tw-translate-y:0; --tw-translate-x:0; --tw-scale-x:1; --tw-scale-y:1; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-scale-x:1; --tw-scale-y:1; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-pan-y: ;--tw-pan-x: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; "></span>Verify and Submit</h3>
+                        <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Check yor Information, agree to terms and submit for account approval.</span></p>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <!-- component-5: contact and footer -->
+        <!-- CONTACT -->
+        <div class="w-full" id="contact">
+            <!--  grid container -->
+            <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+                <!-- card-list -->
+                <div class="grid w-full grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+                    <!-- card -->
+                    <div class="flex flex-col items-center gap-5 px-5 py-7 bg-white rounded-3xl shadow-main">
+                        <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                            <path d="M31.9904 13.965L22.4166 4.40166C21.6057 3.60976 20.5294 3.16817 19.4104 3.16817C18.2914 3.16817 17.2151 3.60976 16.4041 4.40166L6.8304 13.9017C6.40502 14.283 6.0629 14.7524 5.82645 15.279C5.58999 15.8056 5.46454 16.3776 5.45831 16.9575V30.5425C5.47456 31.6946 5.93476 32.793 6.73808 33.5973C7.5414 34.4016 8.62236 34.846 9.74415 34.8333H28.9225C30.0443 34.846 31.1252 34.4016 31.9285 33.5973C32.7319 32.793 33.1921 31.6946 33.2083 30.5425V16.9575C33.2071 16.4009 33.0989 15.85 32.8899 15.3365C32.6809 14.823 32.3752 14.3569 31.9904 13.965ZM18.47 6.68166C18.7058 6.46025 19.0138 6.33747 19.3333 6.33747C19.6528 6.33747 19.9608 6.46025 20.1966 6.68166L28.5833 15.0417L20.1504 23.4017C19.9146 23.6231 19.6066 23.7459 19.2871 23.7459C18.9675 23.7459 18.6596 23.6231 18.4237 23.4017L10.0833 15.0417L18.47 6.68166ZM30.125 30.5425C30.1052 30.8533 29.9688 31.144 29.7445 31.3537C29.5203 31.5633 29.2256 31.6755 28.9225 31.6667H9.74415C9.44102 31.6755 9.14636 31.5633 8.9221 31.3537C8.69785 31.144 8.56147 30.8533 8.54165 30.5425V17.9708L14.7854 24.1458L12.2262 26.6792C11.9391 26.9758 11.7779 27.3771 11.7779 27.7954C11.7779 28.2137 11.9391 28.615 12.2262 28.9117C12.3695 29.066 12.5417 29.1891 12.7324 29.2734C12.9232 29.3578 13.1286 29.4017 13.3362 29.4025C13.7332 29.4009 14.1142 29.2421 14.4 28.9592L17.1287 26.2675C17.8065 26.6928 18.5853 26.9179 19.3796 26.9179C20.1738 26.9179 20.9527 26.6928 21.6304 26.2675L24.3591 28.9592C24.6449 29.2421 25.026 29.4009 25.4229 29.4025C25.6306 29.4017 25.8359 29.3578 26.0267 29.2734C26.2174 29.1891 26.3896 29.066 26.5329 28.9117C26.82 28.615 26.9812 28.2137 26.9812 27.7954C26.9812 27.3771 26.82 26.9758 26.5329 26.6792L23.9583 24.1458L30.125 17.9708V30.5425Z" fill="#22c55e"/>
+                          </svg>
+                        </span>
+                        <p class="text-2xl font-extrabold text-dark-grey-900 ">Email</p>
+                        <p class="text-base leading-7 text-dark-grey-600">Contact us</p>
+                        <p class="text-lg font-bold text-green-500" href="mailto: hello@loopple.com" >hi@cachebank.com</p>
+                    </div>
+                     <!-- card 2 -->
+                     <div class="flex flex-col items-center gap-5 px-5 py-7 bg-white rounded-3xl shadow-main">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                                <path d="M30.4237 20.5833C30.0846 20.5833 29.73 20.4725 29.3908 20.3933C28.7045 20.2357 28.0297 20.0294 27.3712 19.7758C26.656 19.5086 25.8699 19.5225 25.164 19.8148C24.4582 20.1071 23.8826 20.6572 23.5479 21.3592L23.2087 22.0875C21.7115 21.2154 20.3283 20.1513 19.0925 18.9208C17.8944 17.6516 16.8583 16.231 16.0092 14.6933L16.7183 14.3608C17.4018 14.0171 17.9374 13.4259 18.222 12.701C18.5067 11.9761 18.5202 11.1687 18.26 10.4342C18.0151 9.7518 17.8143 9.05363 17.6587 8.34417C17.5817 7.99584 17.52 7.63167 17.4737 7.28334C17.2865 6.16807 16.7177 5.1581 15.8698 4.4353C15.0219 3.7125 13.9506 3.32439 12.8487 3.34084H8.20832C7.55657 3.33996 6.91201 3.48056 6.31687 3.75343C5.72174 4.02629 5.18948 4.42526 4.75498 4.92417C4.31148 5.43662 3.98125 6.04161 3.78698 6.69756C3.59271 7.35351 3.53901 8.04489 3.62957 8.72417C4.4676 15.3142 7.39927 21.4362 11.97 26.1408C16.5508 30.8351 22.5117 33.846 28.9283 34.7067C29.1284 34.7224 29.3294 34.7224 29.5296 34.7067C30.6664 34.7084 31.7641 34.28 32.6129 33.5033C33.0987 33.0571 33.4871 32.5105 33.7528 31.8992C34.0185 31.288 34.1554 30.626 34.1546 29.9567V25.2067C34.1463 24.1126 33.7705 23.0551 33.0907 22.2127C32.411 21.3704 31.4689 20.7948 30.4237 20.5833ZM31.1791 30.0833C31.1786 30.3043 31.1331 30.5227 31.0455 30.7245C30.9579 30.9263 30.8301 31.107 30.6704 31.255C30.5014 31.4131 30.3004 31.5306 30.0817 31.5991C29.8631 31.6676 29.6323 31.6852 29.4062 31.6508C23.6532 30.8792 18.3066 28.1865 14.19 23.9875C10.0698 19.756 7.4252 14.2458 6.66665 8.31251C6.63316 8.08028 6.65037 7.84332 6.71702 7.61877C6.78368 7.39422 6.89813 7.1877 7.05207 7.01417C7.19794 6.84816 7.3764 6.71577 7.57569 6.62571C7.77499 6.53565 7.99059 6.48997 8.20832 6.49167H12.8333C13.1897 6.48273 13.5381 6.6009 13.8192 6.82607C14.1002 7.05124 14.2967 7.3695 14.375 7.72667C14.375 8.15417 14.5137 8.59751 14.6062 9.025C14.7844 9.85446 15.0214 10.6694 15.3154 11.4633L13.1571 12.5083C12.7861 12.6832 12.4978 13.0021 12.3554 13.395C12.2012 13.7805 12.2012 14.2129 12.3554 14.5983C14.5742 19.4794 18.3945 23.4029 23.1471 25.6817C23.5224 25.84 23.9434 25.84 24.3187 25.6817C24.7013 25.5354 25.0118 25.2393 25.1821 24.8583L26.1533 22.6417C26.9487 22.9395 27.7624 23.1828 28.5891 23.37C28.99 23.465 29.4217 23.5442 29.8379 23.6075C30.1857 23.6879 30.4956 23.8897 30.7148 24.1784C30.934 24.467 31.0491 24.8248 31.0404 25.1908L31.1791 30.0833ZM22.0833 3.16667C21.7287 3.16667 21.3587 3.16667 21.0042 3.16667C20.5953 3.20237 20.217 3.40341 19.9524 3.72558C19.6879 4.04776 19.5588 4.46466 19.5935 4.88459C19.6283 5.30451 19.824 5.69306 20.1377 5.96476C20.4514 6.23645 20.8574 6.36903 21.2662 6.33334H22.0833C24.5366 6.33334 26.8893 7.33423 28.6241 9.11582C30.3588 10.8974 31.3333 13.3138 31.3333 15.8333C31.3333 16.1183 31.3333 16.3875 31.3333 16.6725C31.2991 17.0902 31.4276 17.5048 31.6906 17.8253C31.9536 18.1459 32.3296 18.3463 32.7362 18.3825H32.8596C33.2455 18.3841 33.618 18.237 33.9034 17.9702C34.1889 17.7035 34.3665 17.3364 34.4012 16.9417C34.4012 16.5775 34.4012 16.1975 34.4012 15.8333C34.4012 12.4767 33.104 9.25725 30.7943 6.88225C28.4847 4.50724 25.3516 3.17087 22.0833 3.16667ZM25.1667 15.8333C25.1667 16.2533 25.3291 16.656 25.6182 16.9529C25.9073 17.2499 26.2994 17.4167 26.7083 17.4167C27.1172 17.4167 27.5093 17.2499 27.7984 16.9529C28.0876 16.656 28.25 16.2533 28.25 15.8333C28.25 14.1536 27.6003 12.5427 26.4438 11.355C25.2873 10.1673 23.7188 9.50001 22.0833 9.50001C21.6744 9.50001 21.2823 9.66682 20.9932 9.96375C20.7041 10.2607 20.5417 10.6634 20.5417 11.0833C20.5417 11.5033 20.7041 11.906 20.9932 12.2029C21.2823 12.4999 21.6744 12.6667 22.0833 12.6667C22.9011 12.6667 23.6853 13.0003 24.2636 13.5942C24.8418 14.188 25.1667 14.9935 25.1667 15.8333Z" fill="#22c55e"/>
+                              </svg>
+                              
+                              
+                        </span>
+                        <p class="text-2xl font-extrabold text-dark-grey-900 ">Phone</p>
+                        <p class="text-base leading-7 text-dark-grey-600">Reach out to us by phone</p>
+                        <p class="text-lg font-bold text-green-500" href="tel:+215-486-5135" >+215-486-5135</p>
+                    </div>
+                     <!-- card 3 -->
+                     <div class="flex flex-col items-center gap-5 px-5 py-7 bg-white rounded-3xl shadow-main">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                                <path d="M31.7091 15.2475C31.4927 12.9341 30.6966 10.7177 29.3984 8.81412C28.1003 6.91054 26.3443 5.38464 24.3014 4.38503C22.2585 3.38541 19.9984 2.94614 17.7412 3.10998C15.4839 3.27383 13.3065 4.03522 11.4208 5.32C9.8008 6.43252 8.44083 7.89972 7.43858 9.6162C6.43633 11.3327 5.81667 13.2558 5.62413 15.2475C5.43524 17.2261 5.67758 19.2231 6.33355 21.0936C6.98953 22.9641 8.04269 24.6611 9.41663 26.0617L17.5875 34.4692C17.7308 34.6176 17.9013 34.7354 18.0892 34.8157C18.277 34.8961 18.4785 34.9375 18.682 34.9375C18.8856 34.9375 19.0871 34.8961 19.2749 34.8157C19.4628 34.7354 19.6333 34.6176 19.7766 34.4692L27.9166 26.0617C29.2906 24.6611 30.3437 22.9641 30.9997 21.0936C31.6557 19.2231 31.898 17.2261 31.7091 15.2475ZM25.7583 23.8292L18.6666 31.1125L11.575 23.8292C10.5298 22.7557 9.72928 21.4578 9.23081 20.0288C8.73233 18.5997 8.54834 17.075 8.69204 15.5642C8.83668 14.0301 9.31143 12.5482 10.082 11.2256C10.8525 9.90299 11.8996 8.77278 13.1475 7.91666C14.7831 6.80079 16.703 6.20555 18.6666 6.20555C20.6302 6.20555 22.5502 6.80079 24.1858 7.91666C25.4299 8.76947 26.4747 9.89469 27.245 11.2115C28.0154 12.5283 28.4922 14.0039 28.6412 15.5325C28.7896 17.0484 28.6079 18.5793 28.1093 20.0142C27.6107 21.4491 26.8076 22.7522 25.7583 23.8292ZM18.6666 9.5C17.2945 9.5 15.9532 9.91787 14.8124 10.7008C13.6715 11.4837 12.7823 12.5965 12.2572 13.8984C11.7321 15.2003 11.5947 16.6329 11.8624 18.015C12.1301 19.3971 12.7908 20.6667 13.7611 21.6631C14.7313 22.6596 15.9674 23.3382 17.3132 23.6131C18.6589 23.888 20.0538 23.7469 21.3215 23.2076C22.5892 22.6684 23.6726 21.7551 24.4349 20.5834C25.1972 19.4117 25.6041 18.0342 25.6041 16.625C25.6001 14.7366 24.8678 12.9268 23.5677 11.5915C22.2675 10.2562 20.5053 9.50418 18.6666 9.5ZM18.6666 20.5833C17.9043 20.5833 17.1592 20.3512 16.5254 19.9162C15.8916 19.4813 15.3976 18.8631 15.1058 18.1398C14.8141 17.4165 14.7378 16.6206 14.8865 15.8528C15.0352 15.0849 15.4023 14.3796 15.9413 13.826C16.4803 13.2724 17.1671 12.8955 17.9147 12.7427C18.6623 12.59 19.4373 12.6684 20.1416 12.968C20.8458 13.2676 21.4477 13.7749 21.8712 14.4259C22.2947 15.0768 22.5208 15.8421 22.5208 16.625C22.5208 17.6748 22.1147 18.6816 21.3919 19.424C20.6691 20.1663 19.6888 20.5833 18.6666 20.5833Z" fill="#22c55e"/>
+                              </svg>
+                              
+                        </span>
+                        <p class="text-2xl font-extrabold text-dark-grey-900 ">Location</p>
+                        <p class="text-base leading-7 text-dark-grey-600">find us at our office</p>
+                        <a class="text-lg font-bold text-green-500" target="_blank" href="https://goo.gl/maps/QcWzYETAh4FS3KTD7" >15 Tech Alley, Cape Town</a>
+                        
+                    </div>
+
+                
+                </div>
+            </div>
+        </div>
+
+</div>
+
+    <!-- foooter -->
+    <div class="w-full bg-green-500">
+        <div class="container flex flex-col mx-auto">
+            <div class="flex flex-col items-center gap-6 mb-8">
+                <!-- SOCIALS -->
+                <div class="flex items-center gap-8 my-6">
+                    <a href="javasript:void(0)" class="text-grey-700 hover:text-grey-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6348 20.7273V12.766H16.3582L16.7668 9.66246H13.6348V7.68128C13.6348 6.78301 13.8881 6.17085 15.2029 6.17085L16.877 6.17017V3.39424C16.5875 3.35733 15.5937 3.27273 14.437 3.27273C12.0216 3.27273 10.368 4.71881 10.368 7.37391V9.66246H7.63636V12.766H10.368V20.7273H13.6348Z" fill="currentColor"/>
+                            <mask id="mask0_3320_6483" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="7" y="3" width="10" height="18">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6348 20.7273V12.766H16.3582L16.7668 9.66246H13.6348V7.68128C13.6348 6.78301 13.8881 6.17085 15.2029 6.17085L16.877 6.17017V3.39424C16.5875 3.35733 15.5937 3.27273 14.437 3.27273C12.0216 3.27273 10.368 4.71881 10.368 7.37391V9.66246H7.63636V12.766H10.368V20.7273H13.6348Z" fill="black"/>
+                            </mask>
+                            <g mask="url(#mask0_3320_6483)"/>
+                          </svg>
+
+                    </a>
+                    <a href="javasript:void(0)" class="text-grey-700 hover:text-grey-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 3C7.0275 3 3 7.13211 3 12.2284C3 16.3065 5.5785 19.7648 9.15375 20.9841C9.60375 21.0709 9.76875 20.7853 9.76875 20.5403C9.76875 20.3212 9.76125 19.7405 9.7575 18.9712C7.254 19.5277 6.726 17.7332 6.726 17.7332C6.3165 16.6681 5.72475 16.3832 5.72475 16.3832C4.9095 15.8111 5.78775 15.8229 5.78775 15.8229C6.6915 15.887 7.16625 16.7737 7.16625 16.7737C7.96875 18.1847 9.273 17.777 9.7875 17.5414C9.8685 16.9443 10.1003 16.5381 10.3575 16.3073C8.35875 16.0764 6.258 15.2829 6.258 11.7471C6.258 10.7399 6.60675 9.91659 7.18425 9.27095C7.083 9.03774 6.77925 8.0994 7.263 6.82846C7.263 6.82846 8.01675 6.58116 9.738 7.77462C10.458 7.56958 11.223 7.46785 11.988 7.46315C12.753 7.46785 13.518 7.56958 14.238 7.77462C15.948 6.58116 16.7017 6.82846 16.7017 6.82846C17.1855 8.0994 16.8818 9.03774 16.7917 9.27095C17.3655 9.91659 17.7142 10.7399 17.7142 11.7471C17.7142 15.2923 15.6105 16.0725 13.608 16.2995C13.923 16.5765 14.2155 17.1423 14.2155 18.0071C14.2155 19.242 14.2043 20.2344 14.2043 20.5341C14.2043 20.7759 14.3617 21.0647 14.823 20.9723C18.4237 19.7609 21 16.3002 21 12.2284C21 7.13211 16.9703 3 12 3Z" fill="currentColor"/>
+                          </svg>
+                          
+                    </a>
+                    <a href="javasript:void(0)" class="text-grey-700 hover:text-grey-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#000">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.60063 2.18182H16.3991C19.3873 2.18182 21.8183 4.61281 21.8182 7.60074V16.3993C21.8182 19.3872 19.3873 21.8182 16.3991 21.8182H7.60063C4.6127 21.8182 2.18182 19.3873 2.18182 16.3993V7.60074C2.18182 4.61281 4.6127 2.18182 7.60063 2.18182ZM16.3993 20.0759C18.4266 20.0759 20.0761 18.4266 20.0761 16.3993H20.0759V7.60074C20.0759 5.57348 18.4265 3.92405 16.3991 3.92405H7.60063C5.57336 3.92405 3.92405 5.57348 3.92405 7.60074V16.3993C3.92405 18.4266 5.57336 20.0761 7.60063 20.0759H16.3993ZM6.85714 12.0001C6.85714 9.16424 9.16418 6.85714 12 6.85714C14.8358 6.85714 17.1429 9.16424 17.1429 12.0001C17.1429 14.8359 14.8358 17.1429 12 17.1429C9.16418 17.1429 6.85714 14.8359 6.85714 12.0001ZM8.62798 12C8.62798 13.8593 10.1407 15.3719 12 15.3719C13.8593 15.3719 15.372 13.8593 15.372 12C15.372 10.1406 13.8594 8.6279 12 8.6279C10.1406 8.6279 8.62798 10.1406 8.62798 12Z" fill="currentColor"/>
+                            <mask id="mask0_3320_6487" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.60063 2.18182H16.3991C19.3873 2.18182 21.8183 4.61281 21.8182 7.60074V16.3993C21.8182 19.3872 19.3873 21.8182 16.3991 21.8182H7.60063C4.6127 21.8182 2.18182 19.3873 2.18182 16.3993V7.60074C2.18182 4.61281 4.6127 2.18182 7.60063 2.18182ZM16.3993 20.0759C18.4266 20.0759 20.0761 18.4266 20.0761 16.3993H20.0759V7.60074C20.0759 5.57348 18.4265 3.92405 16.3991 3.92405H7.60063C5.57336 3.92405 3.92405 5.57348 3.92405 7.60074V16.3993C3.92405 18.4266 5.57336 20.0761 7.60063 20.0759H16.3993ZM6.85714 12.0001C6.85714 9.16424 9.16418 6.85714 12 6.85714C14.8358 6.85714 17.1429 9.16424 17.1429 12.0001C17.1429 14.8359 14.8358 17.1429 12 17.1429C9.16418 17.1429 6.85714 14.8359 6.85714 12.0001ZM8.62798 12C8.62798 13.8593 10.1407 15.3719 12 15.3719C13.8593 15.3719 15.372 13.8593 15.372 12C15.372 10.1406 13.8594 8.6279 12 8.6279C10.1406 8.6279 8.62798 10.1406 8.62798 12Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0_3320_6487)"/>
+                          </svg>
+                          
+                    </a>
+                    <a href="javasript:void(0)" class="text-grey-700 hover:text-grey-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18" fill="none">
+                            <path d="M16.2 0H1.8C0.81 0 0 0.81 0 1.8V16.2C0 17.19 0.81 18 1.8 18H16.2C17.19 18 18 17.19 18 16.2V1.8C18 0.81 17.19 0 16.2 0ZM5.4 15.3H2.7V7.2H5.4V15.3ZM4.05 5.67C3.15 5.67 2.43 4.95 2.43 4.05C2.43 3.15 3.15 2.43 4.05 2.43C4.95 2.43 5.67 3.15 5.67 4.05C5.67 4.95 4.95 5.67 4.05 5.67ZM15.3 15.3H12.6V10.53C12.6 9.81004 11.97 9.18 11.25 9.18C10.53 9.18 9.9 9.81004 9.9 10.53V15.3H7.2V7.2H9.9V8.28C10.35 7.56 11.34 7.02 12.15 7.02C13.86 7.02 15.3 8.46 15.3 10.17V15.3Z" fill="currentColor"/>
+                          </svg>
+                          
+                    </a>
+                    <a href="javasript:void(0)" class="text-grey-700 hover:text-grey-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8182 6.14597C21.1356 6.44842 20.4032 6.65355 19.6337 6.74512C20.4194 6.27461 21.0208 5.5283 21.3059 4.64176C20.5689 5.07748 19.7553 5.39388 18.8885 5.56539C18.1943 4.82488 17.207 4.36364 16.1118 4.36364C14.0108 4.36364 12.3072 6.06718 12.3072 8.16706C12.3072 8.46488 12.3408 8.75576 12.4058 9.03391C9.24436 8.87512 6.44106 7.36048 4.56485 5.05894C4.23688 5.61985 4.0503 6.27342 4.0503 6.97109C4.0503 8.29106 4.72246 9.45573 5.74227 10.1371C5.11879 10.1163 4.53239 9.94476 4.01903 9.65967V9.70718C4.01903 11.5498 5.33088 13.0876 7.07033 13.4376C6.75164 13.5234 6.41558 13.5709 6.06791 13.5709C5.82224 13.5709 5.58467 13.5465 5.35173 13.5002C5.83612 15.0125 7.2407 16.1123 8.90485 16.1424C7.60343 17.1622 5.96246 17.7683 4.18012 17.7683C3.87303 17.7683 3.57055 17.7498 3.27273 17.7162C4.95658 18.7974 6.95564 19.4278 9.10418 19.4278C16.1026 19.4278 19.9281 13.6312 19.9281 8.60397L19.9153 8.11145C20.6628 7.57833 21.3094 6.90851 21.8182 6.14597Z" fill="currentColor"/>
+                            <mask id="mask0_3320_6484" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="3" y="4" width="19" height="16">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8182 6.14597C21.1356 6.44842 20.4032 6.65355 19.6337 6.74512C20.4194 6.27461 21.0208 5.5283 21.3059 4.64176C20.5689 5.07748 19.7553 5.39388 18.8885 5.56539C18.1943 4.82488 17.207 4.36364 16.1118 4.36364C14.0108 4.36364 12.3072 6.06718 12.3072 8.16706C12.3072 8.46488 12.3408 8.75576 12.4058 9.03391C9.24436 8.87512 6.44106 7.36048 4.56485 5.05894C4.23688 5.61985 4.0503 6.27342 4.0503 6.97109C4.0503 8.29106 4.72246 9.45573 5.74227 10.1371C5.11879 10.1163 4.53239 9.94476 4.01903 9.65967V9.70718C4.01903 11.5498 5.33088 13.0876 7.07033 13.4376C6.75164 13.5234 6.41558 13.5709 6.06791 13.5709C5.82224 13.5709 5.58467 13.5465 5.35173 13.5002C5.83612 15.0125 7.2407 16.1123 8.90485 16.1424C7.60343 17.1622 5.96246 17.7683 4.18012 17.7683C3.87303 17.7683 3.57055 17.7498 3.27273 17.7162C4.95658 18.7974 6.95564 19.4278 9.10418 19.4278C16.1026 19.4278 19.9281 13.6312 19.9281 8.60397L19.9153 8.11145C20.6628 7.57833 21.3094 6.90851 21.8182 6.14597Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0_3320_6484)"/>
+                          </svg>
+                          
+                    </a>
+                </div>
+                <!-- COPY RIGHT -->
+                <div class="flex items-center">
+                    <p class="text-base font-normal leading-7 text-center text-gray-900">© 2024 Cache bank. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/countto.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/maps.js"></script>
+    <script src="./assets/js/loopple/loopple.js"></script>
+</body>
